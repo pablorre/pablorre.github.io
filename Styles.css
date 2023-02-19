@@ -491,6 +491,11 @@ text-align: justify;
   height: auto;
   padding-top: 2em;
 }
+.ventana{
+  position: fixed;
+  top: 20%;
+  left: 0%;
+}
 }
 
 
