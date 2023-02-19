@@ -1,0 +1,556 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-size: 16px;
+}
+
+body{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.caja_principal{
+    position: relative;
+    width: 100%;
+    max-width: 62.5em;
+    min-width: 62.5em;
+    height: 46.875em;
+    margin: 3.125em;
+    justify-content: center;
+    align-items: center;
+    background: white);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 1);
+}
+
+.caja_izquierda{
+    position: relative;
+    padding: 2.5em;
+    background: #003147;
+    height: 46.875em;
+}
+
+.caja_derecha{
+    position: relative;
+    padding: 1.25em;
+    background: rgb(99, 194, 231);
+    height: 46.875em;
+}
+
+.encabezado_caja_izquierda .imagen_personal{
+    position: relative;
+    width: 15.625em;
+    height: 15.625em;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.encabezado_caja_izquierda .imagen_personal img{
+    position: absolute;
+    top: 0;
+    left: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.encabezado_caja_izquierda h1{
+    color: white;
+    font-size: 2em;
+    margin-top: 1.25rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+.encabezado_caja_izquierda h2{
+    color: white;
+    margin-top: 0;
+    font-size: 1.5em;
+    text-align: center;
+    padding-bottom: 1.25rem;
+    border-bottom: 2px solid white;
+  
+}
+.titulo_contacto h3{
+    font-size: 1.2em;
+    color: gray;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+ /*   text-transform: uppercase;*/
+}
+.info_personal{
+    margin-top: 0;
+    padding-bottom: 1.25em;
+    border-bottom: 2px solid white;
+}
+.info_personal_dni{
+    text-align: right;
+    color: gray;
+    list-style-type: none;
+    font-size: large;
+}
+.info_personal_detalle{
+    text-align: left;
+    color: white;
+    list-style-type: none;
+    margin-left: 0.625rem;   
+    font-size: large;
+}
+.info_personal ul{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.info_contacto h3{
+    font-size: 1.2em;
+    color: gray;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+
+.caja_derecha h3{
+    font-size: x-small;
+    color: black;
+    padding-bottom: 5px;
+    border-bottom: 2px solid gray;
+    letter-spacing: 0.25em;
+  word-spacing: 0.25em;
+    
+}
+.caja_derecha p{
+    margin-top: 0.625rem;
+    margin-bottom: 1.25rem;
+    font-size: x-small;
+    
+
+text-align: justify;
+}
+.caja_derecha li{
+    font-size: x-small;
+    padding-left: 2.5rem;
+}
+.caja_derecha ul{
+
+    padding-left: 2.5em;
+    padding-top: 0;
+}
+.perfilprofesional .perfi1 .perfi2{
+    display: flex;
+    flex-direction: column;
+}
+.perfi1 a{
+    font-size: x-small;
+}
+.perfi2 a{
+    font-size: x-small;
+}
+.tamaño-texto p{
+    font-size: large;
+    line-height: 80%
+}
+
+/*-----Barra navegacion redes sociales----*/
+
+.redsocial nav {
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .redsocial nav a {
+    display: inline-block;
+    width: 2.5em;
+    height: 2.5em;
+    margin-right: auto;
+    padding-left: 1.25em;
+    margin-top: 0.625em;
+  
+  }
+  .redsocial nav a img{
+    width: 2.5em;
+    height: 2.5em;
+    margin-right: auto;  
+    margin-left: auto;
+  }
+  /*-----------------------------------------*/
+
+  .aptitudes_idioma{
+    display: flex;
+    
+
+  }
+  .aptitudes_idioma h4{
+    padding-bottom: 5px;
+    font-size: x-small;
+    border-bottom: 2px solid gray;
+    letter-spacing: 0.25rem;
+     word-spacing: 0.25rem;  
+     
+     
+  }
+
+  .aptitudes_idioma ul{
+    padding-top: 0.625em;
+  }
+ 
+  .idio{
+    padding-left: 3.125em;
+  }
+
+/*ventana emergente para referencias*/
+.ventana{
+    background-color:aquamarine;
+    width:auto;
+    padding: 0.625em 1.25em;
+    margin: 20% auto;
+    position: fixed;
+    top: 10%;
+    left: 30%;
+}
+
+  .modal{
+    background-color: rgba(0,0,0,.8);
+    position:fixed;
+    top:-15.625em;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+    transition: all 1s;
+  }
+  
+  #IrVentanaFlotante:target{
+    
+    opacity:1;
+    pointer-events:auto;
+  }
+  #IrVentanaFlotante2:target{
+    opacity:1;
+    pointer-events:auto;
+  }
+
+
+  
+  /*formulario de contacto*/
+ .form_contacto{
+    margin-top: 1.25em;
+    text-align: center;
+    text-decoration: none;
+}
+#irventanacontactoflotante:target{
+    opacity:1;
+    pointer-events:auto;
+}
+.ventana2{
+    background-color:aquamarine;
+    width:18.75em;
+    padding: 0.625em 1.25em;
+    margin: 20% auto;
+    position: relative;
+}
+
+  .modal2{
+    background-color: rgba(0,0,0,.8);
+    position:fixed;
+    top:-15.625em;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+    transition: all 1s;
+  }
+  
+  
+    /* Estilos del formulario de contacto*/
+    .popup-form-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 100;
+      display: none;
+    }
+
+    .popup-form {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 25em;
+      background-color: aquamarine;
+      border-radius: 0.625em;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      padding: 1.25em;
+    }
+
+    .popup-form h2 {
+      text-align: center;
+      margin-bottom: 1.25em;
+    }
+
+    .popup-form label {
+      display: block;
+      margin-bottom: 0.625em;
+    }
+
+    .popup-form input,
+    .popup-form textarea {
+      width: 100%;
+      padding: 0.625em;
+      border-radius: 0.3125em;
+      border: none;
+      background-color: #f5f5f5;
+      margin-bottom: 0.625em;
+    }
+
+    .popup-form input:focus,
+    .popup-form textarea:focus {
+      outline: none;
+      box-shadow: 0 0 5px #ccc;
+    }
+
+    .popup-form button {
+      display: block;
+      width: 100%;
+      padding: 0.625rem;
+      border-radius: 5px;
+      border: none;
+      background-color: #4CAF50;
+      color: #fff;
+      font-size: 16px;
+      margin-top: 0.625rem;
+      cursor: pointer;
+    }
+
+    .popup-form button:hover {
+      background-color: #3e8e41;
+    }
+
+    #open-form-btn{
+      background: none;
+      color: white;
+      text-align: center;
+      margin-top: 1.25em;
+      border: none;
+      width: 100%;
+    }
+    #open-form-btn:hover {
+      background-color: #008CBA;
+      color: white;
+ }
+
+
+
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+  *{
+    box-sizing:content-box; 
+    font-size: 1em;
+    max-width: 100%;
+  }
+  .caja_principal{
+    display: block;
+    max-width: 100%;
+    min-width: 100%;
+    
+  }
+  .caja_izquierda{
+    height: auto;
+    align-items: center;
+  }
+  .encabezado_caja_izquierda .imagen_personal{
+    
+    border-top: 0;
+    margin-top: 0;
+    padding-top: 0;
+    top: 0;
+    left: auto;
+    width: 100%;
+    height: 20em;
+    object-fit: cover;
+    border-radius: 0%;
+    overflow: hidden;
+
+    justify-content: center;
+    align-content: center;
+  
+  }
+
+  .encabezado_caja_izquierda h1{  
+    font-size: 3em;
+  }
+.encabezado_caja_izquierda h2{
+    font-size: 2em;
+  }
+.titulo_contacto h3{
+    font-size: 1.7rem;
+  }
+
+.info_personal_dni{
+    font-size: 2em;
+}
+.info_personal_detalle{
+    font-size: 2em;
+}
+.info_contacto h3{
+    font-size: 1.7rem;
+    box-sizing:content-box;
+}
+.redsocial nav a{
+  margin-right: 0;
+  width: auto;
+  height: auto;
+}
+.redsocial nav a img{
+  width: 5em;
+  height: 5em;
+}
+#open-form-btn{
+  /*margin-left: 3.5em;*/
+  font-size: 2em;  
+  padding-bottom: 1em;
+  align-items: center;
+}
+.caja_derecha h3{
+  font-size: 2em;
+  text-align: center;
+  color: gray;
+  
+}
+.perfi1 p{
+  font-size: 2em;
+  text-align: center;
+  padding-top: 1.3em;
+  padding-bottom: 1.3em;
+}
+.perfi1 a{font-size: 2rem;
+}
+.perfilprofesional {
+  
+  text-align: center;
+ 
+}
+.perfilprofesional a{
+  font-size: 1em
+}
+.perfilprofesional li{
+  font-size: 1.5em
+}
+.perfilprofesional ul{
+  padding-bottom: 1.3em;
+}
+
+.perfilprofesional p{
+  font-size: 2em;
+  text-align: center;
+  padding-top: 1.3em;
+  padding-bottom: 1.3em;
+}
+.tamaño-texto p {
+  font-size: 2.5em;
+  padding-top: 1.3em;
+  padding-bottom: 1.3em;
+}
+
+.aptitudes_idioma{
+  display: block; 
+  
+}
+.aptitudes_idioma h4{
+  font-size: 2em;
+  color: gray;
+}
+.apti ul{
+  padding-top: 1.5em;
+  font-size: 1.3em;
+}
+.idio ul{
+  padding-left: 0;
+  padding-top: 1.5em;
+  list-style: none;
+  font-size: 1.3em;
+}
+.idio h4{
+  padding-left: 0;
+  padding-top: 1.7em;
+  list-style: none;
+  
+}
+.caja_derecha{
+  height: auto;
+  padding-top: 2em;
+}
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 769px) and ( max-width: 992px) {
+  .caja_principal{
+    max-width: 100%;
+    min-width: 100%;
+    
+} 
+.aptitudes_idioma{
+  display: block; 
+  
+}
+.aptitudes_idioma li{
+  font-size: 16px; 
+  
+}
+.idio{
+  padding-left: 0;
+  padding-top: 1em;
+  
+}
+.caja_derecha{
+  height: 100%;
+}
+.caja_izquierda{
+  height: 100%;
+}
+.perfilprofesional li{
+  font-size: 16px;
+}
+.perfilprofesional p{
+  font-size: 16px;
+}
+.perfilprofesional a{
+  font-size: 16px;
+}
+.tamaño-texto p{
+  font-size: 1.5em;
+}
+.ventana{
+  position: fixed;
+  top: 20%;
+  left: 35%;
+}
+.encabezado_caja_izquierda h1{
+  font-size: 2.5em;
+}
+.encabezado_caja_izquierda h2{
+font-size: 2em;
+}
+.info_personal_dni p{
+  font-size: 1.2em
+}
+.info_personal_detalle p{
+  font-size: 1.2em;
+}
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 993px) {
+  .example {background: pink;}
+}
