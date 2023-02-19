@@ -388,20 +388,20 @@ text-align: justify;
   }
 
   .encabezado_caja_izquierda h1{  
-    font-size: 5em;
+    font-size: 3em;
   }
 .encabezado_caja_izquierda h2{
-    font-size: 4em;
+    font-size: 2em;
   }
 .titulo_contacto h3{
     font-size: 1.7rem;
   }
 
 .info_personal_dni{
-    font-size: 3em;
+    font-size: 1em;
 }
 .info_personal_detalle{
-    font-size: 3em;
+    font-size: 1em;
 }
 .info_contacto h3{
     font-size: 1.7rem;
